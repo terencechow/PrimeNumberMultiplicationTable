@@ -3,10 +3,10 @@ var assert = require('chai').assert
 var PrimeNumberMultiplicationTable = require('./PrimeNumberMultiplicationTable.js')
 
 
-var primes = PrimeNumberMultiplicationTable.getPrimes(12)
+var primes = PrimeNumberMultiplicationTable.getPrimes(5)
 
 describe('getPrimes()',function(){
-  it('should expect getPrimes(12) to be [2,3,5,7,11]',function(){
+  it('should expect getPrimes(5) to be [2,3,5,7,11]',function(){
     assert.deepEqual(primes,[2,3,5,7,11])
   })
 })

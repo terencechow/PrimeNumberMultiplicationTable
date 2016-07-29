@@ -32,7 +32,7 @@ function getPrimes(n){
 }
 
 function createMultiplicationTableFromArray(arr){
-
+  console.log(arr)
 }
 
 if (Number(process.argv[2] > 0)) {
