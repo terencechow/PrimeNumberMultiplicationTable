@@ -1,9 +1,9 @@
-# Requirements
+### Requirements
 1. Download & install [node](https://nodejs.org/en/download/)
 2. Install Mocha globally for testing. `npm install -g mocha`
 3. Install Chai for testing `npm install chai`
 
-# Run program with
+### Run program with
 
 `node PrimeNumberMultiplicationTable.js {wholenumber}`
 
@@ -11,15 +11,15 @@ where input is a whole number indicating the number of prime numbers you want th
 
 Example: `node PrimeNumberMultiplicationTable.js 5`
 
-# Test program with
+### Test program with
 `mocha Tests.js`
 
 
-# What I'm pleased with
+### What I'm pleased with
 
 I enjoyed the test because I had never looked into Prime number generation. I also have not done much TDD so it was nice to write the tests first and write code where the tests passed. At one point I had written the sieve without realizing it was providing the prime numbers less than an integer, and my test failed. This was odd because my console was showing only odd numbers. Because of this test I realized that I had found the prime numbers less than an integer, instead of getting the first N prime numbers.
 
-# What I would do with more time
+### What I would do with more time
 
 If I had more time I would look into a number of things:
 
@@ -29,4 +29,4 @@ If I had more time I would look into a number of things:
 
 3) I would add more commenting.
 
-4) Error handling and console logs if someone inputs erroneous arguments. 
+4) Error handling and console logs if someone inputs erroneous arguments.
