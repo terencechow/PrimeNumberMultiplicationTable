@@ -17,7 +17,7 @@ Example: `node PrimeNumberMultiplicationTable.js 5`
 
 ### What I'm pleased with
 
-I enjoyed the test because I had never looked into Prime number generation. I also have not done much TDD so it was nice to write the tests first and write code where the tests passed. At one point I had written the sieve without realizing it was providing the prime numbers less than an integer, and my test failed. This was odd because my console was showing only odd numbers. Because of this test I realized that I had found the prime numbers less than an integer, instead of getting the first N prime numbers.
+I enjoyed the test because I had never looked into Prime number generation. I also have not done much TDD so it was nice to write the tests first and write code where the tests passed. At one point I had written the sieve without realizing it was providing the prime numbers less than an integer, and my test failed. This was odd because my console was showing only prime numbers. Because of this test I realized that I had found the prime numbers less than an integer, instead of getting the first N prime numbers.
 
 ### What I would do with more time
 
