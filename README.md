@@ -28,3 +28,5 @@ If I had more time I would look into a number of things:
 2) I would look at more efficient sieves. Wikipedia indicates that there is an O(N) sieve. That would be a quick win for optimization.
 
 3) I would add more commenting.
+
+4) Error handling and console logs if someone inputs erroneous arguments. 
