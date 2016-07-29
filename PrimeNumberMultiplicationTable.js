@@ -6,7 +6,6 @@ function PrimeNumberMultiplicationTable(n){
 
 function getPrimes(n){
 
-
   var estimateOfNthPrime
   if (n >= 6) {
     estimateOfNthPrime = n * Math.log(n) + n * Math.log(Math.log(n))
@@ -55,7 +54,7 @@ function createMultiplicationTableFromArray(arr){
 }
 
 if (Number(process.argv[2] > 0)) {
-  PrimeNumberMultiplicationTable(process.argv[2])
+  console.log(PrimeNumberMultiplicationTable(process.argv[2]))
 }
 
 module.exports = {
