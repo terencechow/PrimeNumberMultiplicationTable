@@ -11,8 +11,8 @@ function getPrimes(n){
   if (n >= 6) {
     estimateOfNthPrime = n * Math.log(n) + n * Math.log(Math.log(n))
   } else {
-    //If n < 6 we know that the 5th highest prime is 11
-    estimateOfNthPrime = 11
+    //Above estimation only works for n > 6. Below 6 we check the first 5 primes
+    estimateOfNthPrime = [2,3,5,7,11][n - 1]
   }
 
   var list = []
@@ -41,11 +41,21 @@ function getPrimes(n){
 }
 
 function createMultiplicationTableFromArray(arr){
-  console.log(arr)
+  var table = [arr]
+  for (var i =0; i < arr.length; i ++){
+    var row = [arr[i]]
+    for (var j =0; j <arr.length; j++){
+      row.push(arr[i] * arr[j])
+
+    }
+    table.push(row)
+  }
+  table[0].unshift('')
+  return table
 }
 
 if (Number(process.argv[2] > 0)) {
-  console.log(PrimeNumberMultiplicationTable(process.argv[2]))
+  PrimeNumberMultiplicationTable(process.argv[2])
 }
 
 module.exports = {
