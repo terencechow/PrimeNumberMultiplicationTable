@@ -5,16 +5,34 @@ function PrimeNumberMultiplicationTable(n){
 }
 
 function getPrimes(n){
-  return [2,3,5,7,11]
+  var list = []
+
+  for (var i =2; i <= n; i++){
+    list.push(i)
+  }
+
+  for (var i=2; i < Math.sqrt(n); i++) {
+    if (list[i]){
+      var i2 = Math.pow(i,2)
+      for (var k=0; i2 + k * i <= n; k++ ){
+        var j = i2 + k * i
+        // - 2 because our list starts at 2 not 0.
+        list[j - 2] = false
+      }
+    }
+  }
+
+  var primes = []
+  for (var i =0; i < list.length; i++){
+    if (list[i]){
+      primes.push(list[i])
+    }
+  }
+  return primes
 }
 
 function createMultiplicationTableFromArray(arr){
-  return [
-    ['',2,3,5],
-    [2,4,6,10],
-    [3,6,9,15],
-    [5,10,15,25]
-  ]
+
 }
 
 if (Number(process.argv[2] > 0)) {
